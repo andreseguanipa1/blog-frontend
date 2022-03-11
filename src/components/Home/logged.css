@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.cardText {
+    color: black;
+}
+
+.openModal {
+    text-decoration: none;
+    color: black;
+    font-size: 120%;
+}
+
+.insert {
+    margin-top: 50px;
+    height: 700px;
+    width: 100%;
+
+}
+
+::selection {
+    background: #272B30;
+    color: #fff;
+}
+
+.wrapper-create {
+    width: 900px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper-create .title-create {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    user-select: none;
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(-135deg, #212529, #383f46);
+}
+
+.wrapper-create form {
+    padding: 10px 30px 50px 30px;
+}
+
+.wrapper-create form .field-create {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+textarea {
+    resize: none;
+}
+
+.wrapper-create form .field-create input, form .field-create textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+form .field-create textarea {
+    padding-top: 5px;
+    height: 770% !important;
+}
+
+.wrapper-create form .field-create input:focus,
+form .field-create input:valid,
+form .field-create textarea:focus,
+form .field-create textarea:valid {
+    border-color: #272B30;
+}
+
+.wrapper-create form .field-create label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+form .field-create input:focus~label,
+form .field-create input:valid~label,
+form .field-create textarea:focus~label,
+form .field-create textarea:valid~label {
+    top: 0%;
+    font-size: 16px;
+    color: #272B30;
+    background: #fff;
+    transform: translateY(-50%);
+}
+
+form .field-create input[type="submit"] {
+    color: #fff;
+    border: none;
+    padding-left: 0;
+    margin-top: 345px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(-135deg, #212529, #383f46);
+    transition: all 0.3s ease;
+}
+
+form .field-create input[type="submit"]:active, form .field-create textarea[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+form .signup-link {
+    color: #262626;
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .pass-link a,
+form .signup-link a {
+    color: #272B30;
+    text-decoration: none;
+}
+
+form .pass-link a:hover,
+form .signup-link a:hover {
+    text-decoration: underline;
+}
