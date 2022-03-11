@@ -34,7 +34,7 @@ const Login = () => {
 
          swal({
             title: 'Error',
-            text: 'Debe completar los campos',
+            text: 'Check the inputs',
             icon: 'error'
          });
 
@@ -65,7 +65,7 @@ const Login = () => {
                } else {
                   swal({
                      title: 'Error',
-                     text: 'Usuario o contraseña incorrecto',
+                     text: 'User or password Incorrect',
                      icon: 'error'
                   });
                }
